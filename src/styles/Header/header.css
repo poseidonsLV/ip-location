@@ -1,0 +1,83 @@
+.header {
+  padding: 20px;
+  height: 280px;
+  width: 100%;
+  color: white;
+  background: linear-gradient(90deg, rgb(24, 74, 212), rgb(81, 0, 255));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.header-address-form {
+  display: flex;
+  align-items: center;
+  max-width: 400px;
+  width: 100%;
+  margin-top: 15px;
+}
+.header-address-form input {
+  flex: 1;
+  padding: 15px;
+  outline: none;
+  border: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.header-address-form button {
+  cursor: pointer;
+  background: rgb(19, 19, 19);
+  height: 100%;
+  width: 40px;
+  border: none;
+  outline: none;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+}
+.header-address-form button:hover {
+  background: rgb(36, 36, 36);
+}
+.header-address-form button::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  border: 1px solid white;
+  left: 35%;
+  top: 40%;
+  border-left: none;
+  border-top: none;
+  transform: rotate(-45deg);
+}
+.aboutAddress {
+  padding: 5px;
+  position: absolute;
+  max-width: 800px;
+  width: 100%;
+  border-radius: 10px;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  top: 180px;
+  background: white;
+  z-index: 100;
+  color: black;
+}
+.aboutAddress div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
+.aboutAddress div:first-child,
+.aboutAddress div:nth-child(2) {
+  border-right: 1px solid rgb(223, 223, 223);
+}
+.aboutAddress div p {
+  color: gray;
+  text-transform: uppercase;
+}
